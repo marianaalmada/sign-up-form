@@ -55,9 +55,31 @@ label {
     margin-bottom: 3px;
 }
 
+input:focus {
+    border: 1px solid rgb(238, 182, 99);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
 input {
     height: 25px;
     width: 250px;
+    border: 1px solid #E5E7EB;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+span {
+    position: relative;
+}
+
+.error + span::after {
+    content: "*Passwords do not match";
+    color: red;
+    position: absolute;
+    top: 5px;
 }
 
 button {
