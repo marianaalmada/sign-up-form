@@ -4,51 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+Syloti+Nagri&family=Poppins&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Sing-Up Form</title>
+    <title>Sign-Up Form</title>
 </head>
 <body>
     <div>
         <div class="main-container">
             <div class="left-side">
-                <h1>Pilates and Yoga Workouts</h1>
+                <div class="logo-section">
+                    <img src="images/white-loto-icon.png" alt="">
+                    <h2>Yogalates</h2>
+                </div>
             </div>
             <div class="right-side">
-                <p></p>
-                <div></div>
-                <div class="form-title">Let's do this!</div>
-                <form action="" class="form">
-                    <div class="input-boxes">
-                        <div>
-                            <label for="first-name">first name</label>
-                            <input type="text" id="first-name">
+                <p>This is not a real service. Yoga and Pilates improve mobility, strength, balance,
+                   improves posture, back pain, and mood. 
+                   <br>
+                   Sign up <i>now</i> to find dozens of Yoga and Pilates classes. 
+                </p>
+                <div class="form-container">
+                    <div class="form-title">Let's do this!</div>
+                    <form action="" class="form">
+                        <div class="input-boxes">
+                            <div>
+                                <label for="first-name">first name</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div>
+                                <label for="last-name">last name</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                            <div>
+                                <label for="iail">email</label>
+                                <input type="iail" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">phone number</label>
+                                <input type="tel">
+                            </div>
+                            <div>
+                                <label for="password">password</label>
+                                <input type="password" id="password" required>
+                                <span></span>
+                            </div>
+                            <div>
+                                <label for="password-confirm">confirm password</label>
+                                <input type="password" id="password-confirm" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="last-name">last name</label>
-                            <input type="text" id="last-name">
-                        </div>
-                        <div>
-                            <label for="email">email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div>
-                            <label for="phone">phone number</label>
-                            <input type="tel">
-                        </div>
-                        <div>
-                            <label for="password">password</label>
-                            <input type="password" id="password">
-                            <span></span>
-                        </div>
-                        <div>
-                            <label for="password-confirm">confirm password</label>
-                            <input type="password" id="password-confirm">
-                        </div>
-                    </div>
-                    <button type="submit">Create Account</button>
-                    <div>Already have an account? <a href="">Log in</a></div>
-                </form>
+                        <button type="submit">Create Account</button>
+                        <div class="under-button">Already have an account? <a href="">Log in</a></div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -19,17 +19,50 @@ h1 {
 .left-side {
     height: 100vh;
     width: 35vw;
-    background-image: url(backgorund-image.png);
-    background-size: cover;
+    background-image: url(images/backgorund-image.png);
+    flex-shrink: 0;
 }
 
-.right-side {
+.logo-section {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Noto Sans Syloti Nagri', sans-serif;
+    color: white;
+    margin: 10px 0px 25px 0px;
+}
+
+img {
+    width: 80px;
+    margin-top: 25px;
+}
+
+.form-container {
     margin-left: 80px;
+    width: 50vw;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 50px 200px 40px 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form {
@@ -40,7 +73,6 @@ h1 {
 .input-boxes {
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
 }
 
 .input-boxes > div {
@@ -50,9 +82,10 @@ h1 {
 }
 
 label {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 3px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input:focus {
@@ -80,19 +113,29 @@ span {
     color: red;
     position: absolute;
     top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
 }
 
 button {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     height: 40px;
     width: 200px;
     margin: 20px 0px 15px 0px;
     background-color: var(--cafe-color);
     border: none;
     border-radius: 5px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.under-button {
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: var(--cafe-color)
+    color: var(--cafe-color);
+    font-weight: bold;
 }
